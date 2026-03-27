@@ -1,3 +1,6 @@
+/* Import Design System - must be first */
+@import url('base/variables.css');
+
 /* Main Styles - Jesús, el Rey de Reyes */
 
 /* CSS Reset */

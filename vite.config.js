@@ -1,14 +1,14 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: 'src',
-  publicDir: '../public',
+  root: '.',
+  publicDir: 'public',
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     emptyOutDir: true
   },
   server: {
     port: 5173,
-    open: true
+    open: false
   }
 });

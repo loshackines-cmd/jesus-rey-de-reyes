@@ -2,7 +2,7 @@
  * Main Application Entry Point
  * Inicializa todos los componentes del MVP
  */
-import { HeaderNav } from './components/shared/header/header.js';
+import { HeaderNav } from '../components/shared/header/header.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Inicializar navegación del header
@@ -25,5 +25,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
-console.log('Jesús, el Rey de Reyes - App initialized');
