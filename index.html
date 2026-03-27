@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesús, el Rey de Reyes</title>
+  <meta name="description" content="Aplicación web educativa cristiana para niños (3-10 años)">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header" role="banner">
+    <nav class="header__nav" aria-label="Navegación principal">
+      <button 
+        class="header__nav-button" 
+        data-section="historias"
+        aria-pressed="false"
+        aria-label="Ir a sección Historias"
+      >
+        <span class="header__nav-icon">📖</span>
+        <span class="header__nav-label">Historias</span>
+      </button>
+      
+      <button 
+        class="header__nav-button" 
+        data-section="canciones"
+        aria-pressed="false"
+        aria-label="Ir a sección Canciones"
+      >
+        <span class="header__nav-icon">🎵</span>
+        <span class="header__nav-label">Canciones</span>
+      </button>
+      
+      <button 
+        class="header__nav-button" 
+        data-section="libros"
+        aria-pressed="false"
+        aria-label="Ir a sección Libros"
+      >
+        <span class="header__nav-icon">📚</span>
+        <span class="header__nav-label">Libros</span>
+      </button>
+      
+      <button 
+        class="header__nav-button" 
+        data-section="juegos"
+        aria-pressed="false"
+        aria-label="Ir a sección Juegos"
+      >
+        <span class="header__nav-icon">🎮</span>
+        <span class="header__nav-label">Juegos</span>
+      </button>
+    </nav>
+    
+    <div class="header__decorative-line"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__content">
+      <h1 id="hero-title" class="hero__title">Jesús, el Rey de Reyes</h1>
+      <p class="hero__subtitle">¡Aprende, juega y crece con fe!</p>
+      <button class="hero__cta-button" aria-label="Comenzar aventura">
+        Comenzar Aventura <span class="hero__cta-icon">👑</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Featured Episodes -->
+  <section class="episodes" aria-labelledby="episodes-title">
+    <h2 id="episodes-title" class="episodes__title">Episodios Destacados <span class="sparkle">✨</span></h2>
+    <div class="episodes__carousel">
+      <button class="episodes__arrow episodes__arrow--prev" aria-label="Episode anterior">◀</button>
+      <div class="episodes__track">
+        <article class="episode-card episode-card--blue">
+          <div class="episode-card__image"></div>
+          <h3 class="episode-card__title">La Creación</h3>
+          <button class="episode-card__play" aria-label="Reproducir">▶</button>
+        </article>
+        <article class="episode-card episode-card--coral">
+          <div class="episode-card__image"></div>
+          <h3 class="episode-card__title">El Belén</h3>
+          <button class="episode-card__play" aria-label="Reproducir">▶</button>
+        </article>
+        <article class="episode-card episode-card--gold">
+          <div class="episode-card__image"></div>
+          <h3 class="episode-card__title">Jesús Ama</h3>
+          <button class="episode-card__play" aria-label="Reproducir">▶</button>
+        </article>
+      </div>
+      <button class="episodes__arrow episodes__arrow--next" aria-label="Siguiente episode">▶</button>
+    </div>
+  </section>
+
+  <!-- Characters Section -->
+  <section class="characters" aria-labelledby="characters-title">
+    <h2 id="characters-title" class="characters__title">Conoce a los Personajes <span class="sparkle">✨</span></h2>
+    <div class="characters__grid">
+      <article class="character-card">
+        <div class="character-card__frame character-card__frame--blue">
+          <div class="character-card__avatar">👶</div>
+        </div>
+        <h3 class="character-card__name">Niño Jesús</h3>
+      </article>
+      <article class="character-card">
+        <div class="character-card__frame character-card__frame--gold">
+          <div class="character-card__avatar">👩</div>
+        </div>
+        <h3 class="character-card__name">María</h3>
+      </article>
+      <article class="character-card">
+        <div class="character-card__frame character-card__frame--teal">
+          <div class="character-card__avatar">👨</div>
+        </div>
+        <h3 class="character-card__name">José</h3>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__text">Hecho con ❤️ y fe para los más pequeños</p>
+    <p class="footer__copyright">© <span id="current-year"></span> Jesús, el Rey de Reyes</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
